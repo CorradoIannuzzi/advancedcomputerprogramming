@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Il Mercato dell'auto</title>
+        <link rel="stylesheet" href="css/gestione_annunci.css" type="text/css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Area Inserzionisti</h1>
+            <h2>Il Mercato dell'auto</h2>
+        </header>
+
+        <main>
+
+            <h3>Area gestione annunic</h3>
+
+            <form id="add-announce-form">
+                <h4>Inserisci il tuo annuncio: </h4>
+                <label for="inserzionista-id">Il tuo identificativo: </label>
+                <input type="number" id="inserzionista-id" required>
+                <label for="announce-name">Nome/Marca del veicolo: </label>
+                <input type="text" id="announce-name" required>
+                <label for="annonuce-date">Data inserimento annuncio: </label>
+                <input type="date" id="annonuce-date">
+                <label for="announce-place">Locazione del veicolo: </label>
+                <input type="text" id="announce-place">
+                <label for="category-dropdown" id="category-drop">Seleziona una categoria: </label>
+                <select name="category" id="category-dropdown"></select>
+                <label for="type-dropdown" id="type-drop">Seleziona la condizione del veicolo: </label>
+                <select name="type" id="type-dropdown"></select>
+                <label for="announce-km">Chilometraggio veicolo: </label>
+                <input type="number" id="announce-km">
+                <label for="announce-description">Descrizione veicolo: </label>
+                <input type="text" id="announce-description">
+                <label for="announce-price">Prezzo: </label>
+                <input type="number" id="announce-price">
+                <button type="submit">Aggiungi annuncio</button>
+
+            </form>
+
+            <hr>
+
+            <h4>Annunci pubblicati</h4>
+            <ul id="announce-list"></ul>
+
+        </main>
+
+    </body>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/gestione_annunci.js"></script>
+
+</html>
