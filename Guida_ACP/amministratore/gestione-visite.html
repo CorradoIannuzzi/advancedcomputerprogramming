@@ -1,0 +1,57 @@
+<html>
+
+    <head>
+        <!-- Qui inseriremo il link allo stylesheet css -->
+        <title> Discover_Napoli </title>
+        <link rel="stylesheet" href="css/gestione-visite.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header> 
+            <h1> Area Amministratore </h1>
+            <h2> Discover Napoli </h2>    
+        </header>
+
+    <main>
+
+        <h3> Area gestione visite </h3>
+
+        <form id="add-visit-form">
+            <h4> Inserisci una nuova visita: </h4>
+            <label for="visit-code">Codice:</label>
+            <input type="number" id="visit-code" required>
+            <label for="visit-name">Nome:</label>
+            <input type="text" id="visit-name">
+            <label for="visit-description">Descrizione:</label>
+            <input type="text" id="visit-description">
+            <label for="visit-max_p">Numero massimo di partecipanti:</label>
+            <input type="number" id="visit-max_p">
+            <label for="visit-duration">Durata visita:</label>
+            <input type="number" id="visit-duration">
+            <label for="visit-price">Prezzo:</label>
+            <input type="number" id="visit-price">
+            <label for="visit-date">Data:</label>
+            <input type="date" id="visit-date">
+            <label for="visit-encounter">Punto di incontro:</label>
+            <input type="text" id="visit-encounter">
+                <h5>Guide</h5>
+                <label for="guide-dropdown" id="guide-drop">Seleziona una guida:</label>
+                <select name="guide" id="guide-dropdown"></select>
+            <button type="submit">Aggiungi Visita</button>
+        </form>
+    
+        <hr>
+
+        <h6>Lista Visite Registrate:</h6>
+        <ul id="visit-list"></ul>
+
+    </main>    
+
+
+    </body>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/gestione-visite.js"></script>
+
+</html>

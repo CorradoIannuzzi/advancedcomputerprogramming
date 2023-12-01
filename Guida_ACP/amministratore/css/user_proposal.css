@@ -1,0 +1,52 @@
+body{ 
+    font-family:'Times New Roman', Times, serif; 
+    background-color: whitesmoke; 
+    margin: 0;
+}
+
+header{
+
+    background-color: lightgrey; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1, h2 {
+    text-align: left;
+}
+
+main{
+
+    display: flex; 
+    align-items: left;
+    height: 55ch;
+
+}
+
+h3 {
+    font-size: 20px;
+    position: relative;   
+}
+
+#proposal-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style:square;
+    font-size: large;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+#proposal {
+    padding: 30px;
+}
+
+.proposta-item {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    
+}

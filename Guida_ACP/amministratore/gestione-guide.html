@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Discover Napoli</title>
+        <link rel="stylesheet" href="css/gestione-guide.css" type="text/css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Area amministrativa</h1>
+            <h2>Discover Napoli</h2>
+        </header>
+
+        <main>
+
+            <h3>Area gestione guide</h3>
+
+            <form id="add-guide-form">
+                <h4>Inserisci una nuova guida:</h4>
+                <label for="guide-name">Nome:</label>
+                <input type="text" id="guide-name" required>
+                <label for="guide-surname">Cognome:</label>
+                <input type="text" id="guide-surname" required>
+                <label for="guide-id">ID:</label>
+                <input type="text" id="guide-id" required>
+                <label for="guide-birth">Data di Nascita</label>
+                <input type="date" id="guide-birth">
+                <label for="guide-email">Email:</label>
+                <input type="text" id="guide-email">
+                <label for="guide-phone">Telefono:</label>
+                <input type="number" id="guide-phone">
+                <label for="guide-places">Luogo in cui è specializzata</label>
+                <input type="text" id="guide-places">
+                    <h5>Lingue</h5>
+                        <label for="guide-len">Seleziona una lingua:</label>
+                        <select id="guide-drop"></select>
+                <button type="submit">Aggiungi Guida</button>
+            </form>
+
+        </main>
+
+        <h6>Lista Guide Registrate:</h6>
+        <ul id="guide-list"></ul>
+
+
+    </body>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/gestione-guide.js"></script>
+
+</html>
