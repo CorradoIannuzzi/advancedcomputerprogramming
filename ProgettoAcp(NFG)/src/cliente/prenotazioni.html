@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title> Napoli Fun Group </title>
+        <link rel="stylesheet" href="css/prenotazioni.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header> 
+            <h1> Area Cliente </h1>
+            <h2> Napoli Fun Group </h2>    
+        </header>
+
+    <main>
+
+        <h3> Area gestione visite </h3>
+
+        <form id="add-reservation-form">
+            <h4> Effettua una prenotazione: </h4>
+            <label for="monitor-dropdown", id="monitor-drop">Seleziona un animatore:</label>
+            <select name="monitor" id="monitor-dropdown"></select>
+            <label for="special-dropdown" id="special-drop">Seleziona una specialità: </label>
+            <select name="special" id="special-dropdown"></select>
+            <label for="reserve-date">Data:</label>
+            <input type="date" id="reserve-date">
+            <label for="reserve-address">Indirizzo:</label>
+            <input type="text" id="reserve-address">
+            <button type="submit">Aggiungi Prenotazione</button>
+        </form>
+    
+        <hr>
+
+        <h6>Prenotazioni Registrate:</h6>
+        <ul id="reserve-list"></ul>
+
+    </main>    
+
+
+    </body>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/prenotazioni.js"></script>
+
+</html>

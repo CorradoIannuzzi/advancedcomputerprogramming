@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Napoli Fun Group - Benvenuto Direttore</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>Area Direttore</h1>
+        <h2>Napoli Fun Group</h2>
+    </header>
+
+    <main>    
+
+        <h3>Area inserimento Animatori</h3>
+
+        <form id="add-monitor-form">
+            <h4>Inserisci un nuovo animatore: </h4>
+            <label for="monitor-name">Nome animatore: </label>
+            <input type="text" id="monitor-name" required>
+            <label for="monitor-surname">Cognome animatore: </label>
+            <input type="text" id="monitor-surname" required>
+            <label for="monitor-phone">Telefono: </label>
+            <input type="text" id="monitor-phone">
+            <label for="monitor-mail">E-Mail: </label>
+            <input type="text" id="monitor-mail" required>
+            <label for="special-dropdown" id="special-drop">Seleziona una specialità: </label>
+            <select name="special" id="special-dropdown"></select>
+            <button type="submit">Aggiungi animatore</button>
+        </form>
+
+        <hr>
+
+        <h4>Lista Animatori: </h4>
+        <ul id="monitor-list"></ul>
+
+    </main>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
